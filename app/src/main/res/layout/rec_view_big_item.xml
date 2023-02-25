@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="287dp"
+    android:layout_height="134dp"
+    android:background="@drawable/rec_view_item_bg"
+    android:padding="15dp"
+    android:layout_marginBottom="27dp">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/text_dark"
+        android:text="Заголовок блока"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/text_dark"
+        android:textStyle="bold"
+        android:text="Краткое описание\nблока с двумя строчками"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="5dp"
+/>
+
+    <ImageView
+        android:id="@+id/imageId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:srcCompat="@drawable/icon1"
+        android:src="@drawable/icon1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
